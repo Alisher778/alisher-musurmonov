@@ -115,7 +115,7 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("https://s3.amazonaws.com/my-web-storage/images/home2.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
