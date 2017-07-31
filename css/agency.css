@@ -22,6 +22,8 @@ a {
 .orange{color: #ff9800; font-weight: bold;}
 .purple{color: #3f51b5; font-weight: bold;}
 
+.text-muted{-webkit-font-smoothing: antialiased;}
+
 h1,
 h2,
 h3,
@@ -39,9 +41,8 @@ section {
     margin-top: 0;
     margin-bottom: 15px; }
   section h3.section-subheading {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
-    font-style: italic;
     margin-bottom: 75px;
     text-transform: none;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -209,7 +210,7 @@ img.half{max-width: 50%; margin: -20px 0;}
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white; }
+    background-color: #f9f9f9; }
     #portfolio .portfolio-item .portfolio-caption h4 {
       margin: 0;
       text-transform: none; }
@@ -244,15 +245,25 @@ img.half{max-width: 50%; margin: -20px 0;}
     font-size: 3em;
     margin-bottom: 15px; }
   .portfolio-modal .modal-content p {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    text-align: justify;
+    color: #636c72;
+    -webkit-font-smoothing: antialiased;
+  }
   .portfolio-modal .modal-content p.item-intro {
     font-size: 16px;
     font-style: italic;
+    text-align: center;
     margin: 20px 0 30px;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   .portfolio-modal .modal-content ul.list-inline {
     margin-top: 0;
+    text-align: left;
+    text-align: left;
+    color: #636c72;
+    -webkit-font-smoothing: antialiased;
     margin-bottom: 30px; }
+  .portfolio-modal .modal-content ul.list-inline li{margin: 5px 0;}
   .portfolio-modal .modal-content img {
     margin-bottom: 30px; }
   .portfolio-modal .modal-content button {
