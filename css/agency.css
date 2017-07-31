@@ -11,7 +11,7 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #E91E63; }
+  color: #0e88bf; }
   a:hover, a:focus, a:active, a.active {
     color: #fec503; }
 
@@ -362,7 +362,7 @@ header.masthead {
       text-transform: none; }
   .timeline .timeline-body > p,
   .timeline .timeline-body > ul {
-    margin-bottom: 0; }
+    margin-bottom: 0; -webkit-font-smoothing: antialiased; }
 
 @media (min-width: 768px) {
   .timeline:before {
@@ -558,21 +558,24 @@ ul.social-buttons {
 .btn-xl {
   font-size: 18px;
   font-weight: 700;
-  padding: 20px 80px;
+  padding: 17px 80px;
   border-radius: 3px;
   color: white;
+  cursor: pointer;
   border-color: #ffffff;
-  background-color: #e91e63;
+  background-color: #ff0057;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase; 
+  -webkit-font-smoothing: antialiased;
+}
   .btn-xl:focus, .btn-xl.focus {
     color: white;
     border-color: #b48b01;
     background-color: #fec503; }
   .btn-xl:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503; }
+    border-color: #fff;
+    background-color: #002f44; }
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     color: white;
