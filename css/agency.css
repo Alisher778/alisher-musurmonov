@@ -454,12 +454,18 @@ img.half{max-width: 50%; margin: -20px 0;}
     margin-top: 0; }
 
 section#contact {
-  background-color: #222222;
+  background-color:#FFC107;
   background-image: url("../img/map-image.png");
   background-repeat: no-repeat;
   background-position: center; }
   section#contact .section-heading {
     color: white; }
+  section#contact .section-heading.contact{
+    -webkit-font-smoothing: antialiased;
+  }input::-webkit-input-placeholder{
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+  }
   section#contact .form-group {
     margin-bottom: 25px; }
     section#contact .form-group input,
@@ -473,8 +479,8 @@ section#contact {
     border-color: #E91E63;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
-    font-weight: 700;
-    color: #eeeeee;
+    font-weight: 600;
+    color: #000;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase; }
   section#contact :-moz-placeholder {
