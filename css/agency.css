@@ -665,7 +665,7 @@ ul.social-buttons {
   .btn-xl:focus, .btn-xl.focus {
     color: white;
     border-color: #b48b01;
-    background-color: #fec503; }
+    background-color: #002f44; }
   .btn-xl:hover {
     color: white;
     border-color: #fff;
@@ -680,8 +680,8 @@ ul.social-buttons {
     .open > .btn-xl.dropdown-toggle:focus,
     .open > .btn-xl.dropdown-toggle.focus {
       color: white;
-      border-color: #b48b01;
-      background-color: #dcab01; }
+      border-color: #fff;
+      background-color: #002f44; }
   .btn-xl:active, .btn-xl.active,
   .open > .btn-xl.dropdown-toggle {
     background-image: none; }
