@@ -38,6 +38,7 @@
 
     $('form').submit(function(e){
         e.preventDefault();
+        $('div.spinner-wrapper').css('display', 'flex');
         var data = $('form').serializeArray();
         var name = data[0].value;
         var email = data[1].value;
@@ -48,6 +49,7 @@
         var email_options = {name: name, email: email, phone: phone, message: message};
 
         emailjs.send("gmail","portfolio", email_options).then(function(data){
+            $('div.spinner-wrapper').hide();
             $('div.form-message').fadeIn().css('display','flex').delay(3000).fadeOut();
             $("form")[0].reset();
             
