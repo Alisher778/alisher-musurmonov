@@ -48,9 +48,9 @@
         var email_options = {name: name, email: email, phone: phone, message: message};
 
         emailjs.send("gmail","portfolio", email_options).then(function(data){
-            console.log(data)
-            // after submit reset form
+            $('div.form-message').fadeIn().css('display','flex').delay(3000).fadeOut();
             $("form")[0].reset();
+            
         }).catch(function(err){
             console.log(err)
         });
@@ -58,5 +58,9 @@
         
         
     });
+
+    $('.message-close').click(function(){
+        $('div.form-message').fadeOut(600);
+    })
 
 })(jQuery); // End of use strict
