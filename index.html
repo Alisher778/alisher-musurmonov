@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="or3mo8SRoQOgCP4wyQrTH1jz6nSU9LsfO_ToOzc5Jyo" />
     <meta name="description" content="Alisher Musurmonov is a web developer based in Brooklyn, New York area. Skills includes Javascript, NodeJs, ReactJs, Bootstrap, HTML, CSS, jQuery and more.">
     <meta name="author" content="Alisher Musurmonov">
 
@@ -78,7 +79,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">Full-stack Web Developer</div>
                 <div class="intro-heading">Alisher Musurmonov</div>
-                <a href="#services" class="btn btn-xl">Hire Me</a>
+                <a href="#contact" class="btn btn-xl">Hire Me</a>
             </div>
         </div>
     </header>
@@ -265,32 +266,32 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form id="contactForm" name="sentMessage" novalidate>
+                    <form id="contactForm" action="">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required message="Please enter your name." name="name">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required message="Please enter your email address." name="email">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required message="Please enter your phone number." name="phone">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" id="message" placeholder="Your Message *" required message="Please enter a message." name="message"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button class="btn btn-xl" type="submit">Send Message</button>
+                                <button class="btn btn-xl">Send Message</button>
                             </div>
                         </div>
                     </form>
@@ -460,12 +461,20 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_EO1kvTsTuaubMuDde1XPQ");
+       })();        
+
+    </script>
+
     <!-- Contact form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!-- <script src="js/contact_me.js"></script> -->
 
     <!-- Custom scripts for this template -->
-    <script src="js/agency.min.js"></script>
+    <script src="js/agency.js"></script>
 
 </body>
 

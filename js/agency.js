@@ -35,4 +35,28 @@
         }
     });
 
+
+    $('form').submit(function(e){
+        e.preventDefault();
+        var data = $('form').serializeArray();
+        var name = data[0].value;
+        var email = data[1].value;
+        var phone = data[2].value;
+        var message = data[3].value;
+        
+
+        var email_options = {name: name, email: email, phone: phone, message: message};
+
+        emailjs.send("gmail","portfolio", email_options).then(function(data){
+            console.log(data)
+            // after submit reset form
+            $("form")[0].reset();
+        }).catch(function(err){
+            console.log(err)
+        });
+        
+        
+        
+    });
+
 })(jQuery); // End of use strict
