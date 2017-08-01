@@ -24,6 +24,29 @@ a {
 
 .text-muted{-webkit-font-smoothing: antialiased;}
 
+/*---- Thank you message ----*/
+.thankyou{
+  width: 80%;
+  background: #ddd;
+  max-width: 500px;
+  text-align: center;
+  padding: 60px;
+  border-radius: 10px;
+  background: rgb(0, 47, 68);
+  -webkit-font-smoothing: antialiased;
+}
+
+.thankyou i{
+  background: #fff;
+  border-radius: 50%;
+  padding: 25px;
+  margin: 40px 0;
+  color: #4caf50;
+}
+
+.thankyou h3{color: #FFC107}
+.thankyou p{color: #FFF}
+
 h1,
 h2,
 h3,
