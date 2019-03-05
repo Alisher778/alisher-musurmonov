@@ -45,17 +45,30 @@
         var phone = data[2].value;
         var message = data[3].value;
         
+        $.ajax({
+            url: '/mail.php',
+            type: "POST",
+            data: data,
+            success: function(res) {
+                console.log(res);
+                $('div.spinner-wrapper').hide();
+                $('div.form-message').fadeIn().css('display','flex').delay(3000).fadeOut();
+                $("form")[0].reset();
+            },error: function(err) {
+                console.log(err)
+            }
+        })
+           
+        // var email_options = {name: name, email: email, phone: phone, message: message};
 
-        var email_options = {name: name, email: email, phone: phone, message: message};
-
-        emailjs.send("gmail","portfolio", email_options).then(function(data){
-            $('div.spinner-wrapper').hide();
-            $('div.form-message').fadeIn().css('display','flex').delay(3000).fadeOut();
-            $("form")[0].reset();
+        // emailjs.send("gmail","portfolio", email_options).then(function(data){
+        //     $('div.spinner-wrapper').hide();
+        //     $('div.form-message').fadeIn().css('display','flex').delay(3000).fadeOut();
+        //     $("form")[0].reset();
             
-        }).catch(function(err){
-            console.log(err)
-        });
+        // }).catch(function(err){
+        //     console.log(err)
+        // });
         
         
         
